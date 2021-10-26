@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
         // When navigating to the "/" route, build the FirstScreen widget.
         '/': (context) => const Faturas(),
         // When navigating to the "/second" route, build the SecondScreen widget.
-        '/pay-with-credit-card': (context) => const PayWithCreditCard(),
+        '/pay-with-credit-card': (context) => const PaymentOptionsScreen(),
       },
     );
   }

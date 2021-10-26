@@ -11,7 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('tap on option 4 to test invoice value',
       (WidgetTester tester) async {
-    Widget testWidget = const MaterialApp(home: PayWithCreditCard());
+    Widget testWidget = const MaterialApp(home: PaymentOptionsScreen());
 
     await tester.pumpWidget(testWidget);
 
