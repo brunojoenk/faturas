@@ -17,7 +17,7 @@ class PayWithCreditCard extends StatelessWidget {
       ),
       body: const Padding(
         padding: EdgeInsets.all(10.0),
-        child: PayWithCreditCardWidget(),
+        child: PaymentOptionsScreen(),
       ),
       bottomNavigationBar: Row(
         children: [
@@ -43,16 +43,16 @@ class PayWithCreditCard extends StatelessWidget {
 }
 
 /// This is the stateful widget that the main application instantiates.
-class PayWithCreditCardWidget extends StatefulWidget {
-  const PayWithCreditCardWidget({Key? key}) : super(key: key);
+class PaymentOptionsScreen extends StatefulWidget {
+  const PaymentOptionsScreen({Key? key}) : super(key: key);
 
   @override
-  State<PayWithCreditCardWidget> createState() =>
-      _PayWithCreditCardWidgetState();
+  State<PaymentOptionsScreen> createState() =>
+      _PaymentOptionsScreenState();
 }
 
 /// This is the private State class that goes with MyStatefulWidget.
-class _PayWithCreditCardWidgetState extends State<PayWithCreditCardWidget> {
+class _PaymentOptionsScreenState extends State<PaymentOptionsScreen> {
   PaymentOptionsViewModel paymentOptionsViewModel =
       PaymentOptionsViewModel(paymentOptionsModel: PaymentOptionsModel());
   late PaymentOption selectedPaymentOption =
